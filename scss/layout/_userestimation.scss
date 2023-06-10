@@ -28,4 +28,6 @@
   border-radius: 1rem;
   padding: 2rem;
   flex: 1 0 0;
+  @media screen and (max-width: $break-point--min) {
+  }
 }
