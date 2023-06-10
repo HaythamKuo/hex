@@ -1,0 +1,19 @@
+@import "bootstrap/bootstrap.scss";
+
+@import "base/base";
+@import "base/animation";
+
+//layput
+@import "layout/navbar.scss";
+@import "layout/content";
+@import "layout/header";
+@import "layout/userestimation";
+@import "layout/card";
+@import "layout/footer";
+@import "layout/price";
+//component
+@import "components/button";
+@import "components/image";
+@import "components/figure";
+@import "components/card";
+@import "components/servicesection";

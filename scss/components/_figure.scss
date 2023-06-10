@@ -1,0 +1,12 @@
+.estimation-users__block-info {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  &--img {
+    margin-right: 30px;
+  }
+}
+.estimation-users__block-infos {
+  display: flex;
+  flex-direction: column;
+}

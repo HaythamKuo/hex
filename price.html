@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI工具王</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/scss/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navBar border-bottom border-white pb-4 origin">
+        <img
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
+          alt="logo icon"
+        />
+        <div class="navBar__side">
+          <a href="/index.html" class="m-lg-2 navBar__side--anchor">首頁</a>
+          <a class="navBar__side--anchor" href="/price.html">定價</a>
+        </div>
+        <div class="navBar-RWD">
+          <a href="#" class="navBar-RWD--tag"
+            ><img
+              class="menuTag"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/menu.png"
+              alt="menu"
+          /></a>
+          <a href="#">
+            <img
+              class="closeTag none"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/close.png"
+              alt="close"
+            />
+          </a>
+        </div>
+      </nav>
+      <div class="simplified none">
+        <a href="/index.html">首頁</a>
+        <a href="/price.html">定價</a>
+      </div>
+
+      <header class="mt-lg-5 hidden">
+        <section class="header-sec1 title-1">
+          <span class="title-1__one">用多少，</span>
+          <span class="title-1__two">付多少。</span>
+        </section>
+
+        <section class="header-sec2 mb-5 mt-5">
+          <p>我們相信，最靈活的取用機制，才能最大化的幫助你業務的推動。</p>
+        </section>
+
+        <div class="header__imgs">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+            alt="deco"
+          />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+            alt="deco"
+          />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+            alt="deco"
+          />
+        </div>
+      </header>
+
+      <!--user-cards-->
+      <section class="sectionOne hidden">
+        <h1 class="mb-5">定價</h1>
+        <div class="cardGroup"></div>
+      </section>
+
+      <!--rule 1-->
+      <section class="sectionTwo mt-5 hidden">
+        <div class="rule position-relative">
+          <div class="rule-list"><h5>使用規範</h5></div>
+          <div class="rule-notice position-relative"></div>
+        </div>
+      </section>
+    </div>
+
+    <!--Cards group-->
+    <div class="cards hidden">
+      <p class="cards-title text-center">這些超酷的應用，都來自 AI工具王</p>
+      <!--輸入框-->
+      <form class="cards-search text-center" action="#">
+        <img
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/search.png"
+          alt="search icon"
+          class="cards-search--img mx-2"
+        />
+        <input
+          class="cards-search--input"
+          type="text"
+          placeholder="輸入關鍵字搜尋"
+        />
+      </form>
+
+      <!--篩選框-->
+      <div class="cards-condition">
+        <div class="cards-condition__filter">
+          <span class="cards-condition__filter--title">篩選</span>
+          <span><i class="fa-solid fa-filter"></i></span>
+        </div>
+        <div class="cards-condition__attributes">
+          <a href="#">全部</a>
+          <a href="#">聊天</a>
+          <a href="#">影像辨識</a>
+          <a href="#">翻譯</a>
+          <a href="#">行銷</a>
+          <a href="#">客服</a>
+          <a href="#">生產力</a>
+        </div>
+        <div class="cards-condition__time">
+          <span class="cards-condition__filter--title">由新到舊</span>
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/keyboard%20arrow%20down.png"
+            alt="arrowdown"
+          />
+        </div>
+      </div>
+
+      <!--RWD-->
+      <div class="cards-conditions hidden">
+        <div class="one">
+          <div class="cards-conditions__filter">
+            <span class="cards-conditions__filter--title">篩選</span>
+            <span><i class="fa-solid fa-filter"></i></span>
+          </div>
+          <div class="cards-conditions__time">
+            <span class="cards-conditions__filter--title">由新到舊</span>
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/keyboard%20arrow%20down.png"
+              alt="arrowdown"
+            />
+          </div>
+        </div>
+
+        <div class="cards-conditions__attributes two">
+          <a href="#">全部</a>
+          <a href="#">聊天</a>
+          <a href="#">影像辨識</a>
+          <a href="#">翻譯</a>
+          <a href="#">行銷</a>
+          <a href="#">客服</a>
+          <a href="#">生產力</a>
+        </div>
+      </div>
+      <!--RWD-->
+      <!--//////////////////////////////////////////////////-->
+      <!--卡片列表-->
+      <div class="cards-lists hidden">
+        <div class="list-unstyled d-flex textTwo"></div>
+      </div>
+
+      <div class="pageBtns mt-4 me-2 hidden">
+        <a href="#" class="pageBtns-btn">1</a>
+        <a href="#" class="pageBtns-btn">2</a>
+        <a href="#" class="pageBtns-btn">3</a>
+        <a href="#" class="pageBtns-btn">4</a>
+        <a href="#" class="pageBtns-btn">5</a>
+        <a href="#" class="pageBtns-btn">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/keyboard%20arrow%20right.png"
+            alt="arrowright"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--rule 2-->
+      <section class="sectionThree hidden">
+        <div class="question">
+          <div class="question-title"><h5>常見問題</h5></div>
+          <div class="question-refind"></div>
+        </div>
+      </section>
+
+      <!--footer-->
+      <div class="footer-label hidden">
+        <p class="footer-label--home">首頁</p>
+        <img
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
+          alt="logo icon"
+          class="footer-label--image"
+        />
+      </div>
+      <p class="footer-label--home footer-margin hidden">定價</p>
+
+      <!--////////////////////////////-->
+      <!--最底層-->
+      <div class="footer-route pt-4">
+        <span class="footer-route--copyright">AI工具王 © 2023</span>
+        <div class="footer-route--media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+        <div class="footer-route-return">
+          <a href="#" class="text-decoration-none text-white">Back to top</a>
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/arrow%20upward.png"
+            alt="arrowupward"
+          />
+        </div>
+      </div>
+
+      <!--footer RWD-->
+      <div class="footer-routes pt-4">
+        <div class="footerRWD">
+          <span class="footer-routes--copyright">AI工具王 © 2023</span>
+          <div class="footer-routes-return hidden">
+            <a href="#" class="text-decoration-none text-white">Back to top</a>
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/arrow%20upward.png"
+              alt="arrowupward"
+            />
+          </div>
+        </div>
+        <div class="footer-routes--media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <script src="/price.js"></script>
+  </body>
+</html>

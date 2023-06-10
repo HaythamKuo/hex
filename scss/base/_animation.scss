@@ -1,0 +1,18 @@
+@media screen and (max-width: $break-point) {
+  .container > * {
+    width: 100%;
+  }
+  .navBar img {
+    width: 50%;
+  }
+  .header__titles > section {
+    font-size: 50%;
+    line-height: 6rem;
+  }
+  .header__images > img {
+    width: 25%;
+  }
+  .estimation {
+    flex-direction: column;
+  }
+}

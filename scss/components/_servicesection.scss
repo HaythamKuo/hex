@@ -1,0 +1,52 @@
+.serviceBtn-div {
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  padding: 20px 37px 20px 40px;
+  cursor: pointer;
+}
+//////////////////////////////
+
+.rwdP {
+  @media screen and (max-width: $break-point--min) {
+    font-weight: 900;
+  }
+}
+
+// 首頁,定價,圖片
+.footer-label--home {
+  font-size: 5rem;
+  font-weight: 900;
+  @media screen and (max-width: $break-point--medium) {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+}
+
+.footer-route {
+  justify-content: space-around;
+  display: flex;
+  @media screen and (max-width: $break-point--min) {
+    display: none;
+  }
+}
+.footer-route--copyright {
+  font-weight: 700;
+  flex: 2 0 0;
+}
+.footer-route--media {
+  flex: 6 0 0;
+  font-weight: 700;
+  display: flex;
+  > a {
+    text-decoration: none;
+    color: inherit;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+.footer-route-return {
+  flex: 0 0 1;
+  font-weight: 700;
+  cursor: pointer;
+}

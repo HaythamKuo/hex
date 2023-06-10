@@ -1,0 +1,11 @@
+//位於header的小按鈕
+.header--btn {
+  background-color: #1e1e1e;
+  border: 0.5px solid white;
+  border-radius: 13px;
+  color: $white;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 900;
+  pointer-events: none;
+}

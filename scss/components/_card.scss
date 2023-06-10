@@ -1,0 +1,119 @@
+.cards-title {
+  font-weight: 900;
+  font-size: 5rem;
+  margin-top: 5rem;
+  @media screen and (max-width: $break-point) {
+    font-size: 2.5rem;
+  }
+  @media screen and (max-width: $break-point--min) {
+    font-size: 2rem;
+  }
+}
+////////////////////////////////////////////////
+//搜尋框
+.cards-search {
+  margin-top: 80px;
+  background-color: #f2f2f2;
+  color: #919191;
+  border-radius: 16px;
+  display: flex;
+  padding: 1rem 3rem;
+  align-items: center;
+
+  &--input {
+    border: none;
+    background-color: inherit;
+    font-weight: 400;
+    width: 70%;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+////////////////////////////////////////////////
+//條件搜尋
+.cards-condition__attributes {
+  :not(:last-child) {
+    padding: 1rem;
+  }
+  & a {
+    text-decoration: none;
+    color: #919191;
+  }
+}
+
+////////////////////////////////////
+// 服務卡片
+.textTwo {
+  gap: 1rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.cards-lists--service {
+  border: #f2f2f2 1px solid;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  flex: 1 0 calc(33.33% - 1rem);
+  &-content {
+    &--image {
+      object-fit: cover;
+      width: 100%;
+    }
+    &--h3 {
+      font-weight: 900;
+      font-size: 20px;
+    }
+    &--h4 {
+      color: #525252;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
+.textOne {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 159px;
+  overflow: scroll;
+}
+
+////////////////////////////////////
+// AI模型
+.cards-lists--service-author {
+  border-bottom: #f2f2f2 solid 1px;
+  border-top: #f2f2f2 solid 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.cards-lists--service-tag {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+////////////////////////////////////
+.pageBtns {
+  &-btn {
+    text-decoration: none;
+    color: #020202;
+  }
+}
+
+//兩張卡片呈現在一行
+@media screen and (max-width: $break-point--medium) {
+  .cards-lists--service {
+    flex: 1 0 calc(50% - 1rem);
+  }
+}
+
+//一張卡片呈現一行
+@media screen and (max-width: $break-point--min) {
+  .cards-lists--service {
+    flex: 1 0 calc(100% - 1rem);
+  }
+}

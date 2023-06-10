@@ -1,0 +1,31 @@
+.estimation {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 24px;
+
+  &-users__block {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 2rem;
+    flex: 1 0 0;
+
+    &--quote {
+      flex: 1 0 0;
+      margin-bottom: 4rem;
+    }
+  }
+  @media screen and (max-width: $break-point--min) {
+    margin-top: 5rem;
+  }
+}
+.esitmation-users__block {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 1 0 0;
+}

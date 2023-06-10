@@ -1,0 +1,125 @@
+// 往下箭頭
+.header__images {
+  display: flex;
+  flex-direction: row-reverse;
+  @media screen and (max-width: $break-point--min) {
+    flex-direction: row;
+    justify-content: center;
+
+    & > img {
+      flex: 1 0 0;
+    }
+  }
+}
+
+//三張圖片位置
+.content__fast,
+.content__lively,
+.content__extend {
+  border: 0.5px solid #525252;
+  padding: 4rem 2.5rem;
+  border-radius: 16px;
+  line-height: 120%;
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  @media screen and (max-width: $break-point--min) {
+    padding: 2rem;
+    margin-top: 1rem;
+    &:not(:last-child) {
+      margin-right: 0rem;
+    }
+  }
+}
+
+//enterprise position notfinished
+.factory {
+  margin-top: 80px;
+
+  &--section1 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    gap: 0 20px;
+    position: relative;
+
+    & img {
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 125px 0 10px #1e1e1e, inset -120px 0 10px #1e1e1e;
+      z-index: 2;
+    }
+  }
+  &--section2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    position: relative;
+    gap: 0 20px;
+    & img {
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 85px 0 5px rgba(30, 30, 30, 0.9999),
+        inset -80px 0 5px rgba(30, 30, 30, 0.9999);
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: $break-point--min) {
+    display: none;
+  }
+}
+
+.factory-RWD {
+  display: none;
+  @media screen and (max-width: $break-point--min) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    &--section1 {
+      display: flex;
+      & > img {
+        width: 50%;
+        position: relative;
+        z-index: 1;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 4rem 0 10px #1e1e1e, inset -5rem 0 10px #1e1e1e;
+        z-index: 2;
+      }
+    }
+    &--section2 {
+      display: flex;
+      justify-content: space-evenly;
+      & > img {
+        width: 30%;
+      }
+    }
+  }
+}

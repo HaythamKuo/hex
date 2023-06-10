@@ -1,0 +1,25 @@
+$border-test: 1px red solid;
+$break-point: 61.5em;
+$break-point--medium: 47.7em; //763.2px
+$break-point--min: 26.8em; //400多px
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  font-family: Noto Sans TC, sans-serif;
+  color: $white;
+  max-width: 1920px;
+}
+.container {
+  margin: 0 auto;
+}
+.cards {
+  margin: 0 auto;
+  width: 100%;
+}

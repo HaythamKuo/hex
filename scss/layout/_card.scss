@@ -1,0 +1,115 @@
+.cards {
+  border-radius: 160px;
+  background-color: $white;
+  margin-top: 160px;
+  color: black;
+  padding: 4rem;
+  @media screen and (max-width: $break-point--min) {
+    border-radius: 20px;
+  }
+}
+
+//條件搜尋
+.cards-condition {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__filter--title {
+    margin-right: 14.69px;
+  }
+  @media screen and (max-width: $break-point) {
+    display: none;
+  }
+}
+.cards-condition__filter,
+.cards-condition__time {
+  border: 1px #f2f2f2 solid;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+.cards-conditions {
+  display: none;
+  margin: 1.5rem;
+  @media screen and (max-width: $break-point) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    .one {
+      display: flex;
+      justify-content: space-between;
+      & .cards-conditions__filter,
+      .cards-conditions__time {
+        border: 1px #f2f2f2 solid;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+      }
+    }
+    .two {
+      text-align: center;
+      margin: 0rem;
+      & a {
+        text-decoration: none;
+        color: #919191;
+        &:not(:last-child) {
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $break-point--min) {
+    margin-top: 1.5rem;
+    .one {
+      & .cards-conditions__filter,
+      .cards-conditions__time {
+        padding: 0.5rem;
+      }
+    }
+    .two {
+      display: flex;
+      overflow: scroll;
+      white-space: nowrap;
+      margin-top: 2rem;
+      left: 0;
+    }
+  }
+}
+
+///////////////////////////////////
+//card list layout
+
+.cards-lists {
+  margin-top: 60px;
+}
+
+.cards-lists--service-content {
+  display: flex;
+  flex-direction: column;
+}
+
+///////////////////////////////////
+//按鈕團體
+.pageBtns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &-btn {
+    &:not(:last-child) {
+      padding-right: 53px;
+    }
+  }
+
+  @media screen and (max-width: $break-point--medium) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $break-point--min) {
+    &-btn {
+      &:not(:last-child) {
+        padding-right: 2rem;
+      }
+    }
+  }
+}

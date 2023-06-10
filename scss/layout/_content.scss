@@ -1,0 +1,18 @@
+//flash lively extend
+.content {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $break-point--min) {
+    flex-direction: column;
+  }
+}
+// paragraph
+.singlePara {
+  margin-top: 300px;
+
+  @media screen and (max-width: $break-point--min) {
+    font-size: 20px;
+    margin-top: 5rem;
+  }
+}

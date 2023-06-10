@@ -1,0 +1,48 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  &__side--anchor {
+    text-decoration: none;
+    color: $white;
+  }
+  &__side--anchor:hover {
+    color: inherit;
+  }
+  .esimation {
+    flex-wrap: wrap;
+  }
+  &__side {
+    @media screen and (max-width: $break-point--min) {
+      display: none;
+    }
+  }
+}
+.navBar-RWD {
+  display: none;
+  @media screen and (max-width: $break-point--min) {
+    display: inline-block;
+    & a img {
+      width: 100%;
+    }
+  }
+}
+
+.simplified {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 4rem;
+
+  margin-top: 10rem;
+  & > a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.none {
+  display: none;
+}
