@@ -63,11 +63,12 @@ class ProductCards {
     return `
       <div class="cards-lists--service">
         <div class="cards-lists--service-content">
-          <img
+          <div  class="cards-lists--service-content--image">
+            <img
             src="${this.img}"
             alt="tool${this.num}"
-            class="cards-lists--service-content--image"
           />
+          </div>
           <div class="textOne">
             <p class="cards-lists--service-content--h3">
               ${this.title}

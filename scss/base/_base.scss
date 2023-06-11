@@ -23,3 +23,15 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+.removeAtag {
+  pointer-events: none;
+}
+
+.addBackColor {
+  background-color: #020202;
+  &:first-of-type {
+    color: white;
+    border-radius: 16px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+}

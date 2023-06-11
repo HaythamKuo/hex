@@ -80,36 +80,37 @@ class ProductCards {
   }
   generateHTML() {
     return `
-      <div class="cards-lists--service">
-        <div class="cards-lists--service-content">
-          <img
-            src="${this.img}"
-            alt="tool${this.num}"
-            class="cards-lists--service-content--image"
-          />
-          <div class="textOne">
-            <p class="cards-lists--service-content--h3">
-              ${this.title}
-            </p>
-            <p class="cards-lists--service-content--h4">
-              ${this.desc}
-            </p>
-          </div>
-        </div>
-        <div class="cards-lists--service-author">
-          <span class="">AI模型</span>
-          <span>${this.user}</span>
-        </div>
-        <div class="cards-lists--service-tag">
-          <span class="">#${this.tag}</span>
-          <a href="#">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/share.png"
-              alt="shareicon"
-            />
-          </a>
-        </div>
-      </div>`;
+    <div class="cards-lists--service">
+    <div class="cards-lists--service-content">
+      <div  class="cards-lists--service-content--image">
+        <img
+        src="${this.img}"
+        alt="tool${this.num}"
+      />
+      </div>
+      <div class="textOne">
+        <p class="cards-lists--service-content--h3">
+          ${this.title}
+        </p>
+        <p class="cards-lists--service-content--h4">
+          ${this.desc}
+        </p>
+      </div>
+    </div>
+    <div class="cards-lists--service-author">
+      <span class="">AI模型</span>
+      <span>${this.user}</span>
+    </div>
+    <div class="cards-lists--service-tag">
+      <span class="">#${this.tag}</span>
+      <a href="#">
+        <img
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/share.png"
+          alt="shareicon"
+        />
+      </a>
+    </div>
+  </div>`;
   }
 }
 const cardEl = document.querySelector(".textTwo");

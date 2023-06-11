@@ -16,9 +16,19 @@
 .footer-label--home {
   font-size: 5rem;
   font-weight: 900;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
   @media screen and (max-width: $break-point--medium) {
     font-size: 2.5rem;
     padding: 0.5rem;
+  }
+  @media screen and (max-width: $break-point--min) {
+    position: relative;
+    bottom: -3rem;
   }
 }
 

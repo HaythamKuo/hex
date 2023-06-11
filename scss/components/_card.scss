@@ -40,6 +40,11 @@
     text-decoration: none;
     color: #919191;
   }
+  & a:first-of-type {
+    background-color: #020202;
+    color: white;
+    border-radius: 16px;
+  }
 }
 
 ////////////////////////////////////
@@ -98,10 +103,15 @@
 
 ////////////////////////////////////
 .pageBtns {
+  position: relative;
   &-btn {
     text-decoration: none;
     color: #020202;
   }
+
+  // & :first-of-type {
+  //   background-color: #020202;
+  // }
 }
 
 //兩張卡片呈現在一行
