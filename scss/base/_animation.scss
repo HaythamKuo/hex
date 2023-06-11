@@ -16,3 +16,22 @@
     flex-direction: column;
   }
 }
+
+//圖片往下跑的特效
+@keyframes moveUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+//圖片往上跑的特效
+@keyframes moveDown {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

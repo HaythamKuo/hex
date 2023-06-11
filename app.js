@@ -166,3 +166,20 @@ navTag.addEventListener("click", () => {
   simplified.classList.toggle("none");
   hidden.forEach((e) => e.classList.toggle("none"));
 });
+
+////////////////////////////////////////
+////////////////////////////////////////
+//動畫延遲製作
+const imgContainer = document.querySelector(".header__images");
+const imgs = document.querySelector(".header__images--img");
+
+const imgObs = new IntersectionObserver((entries) => {
+  entries.forEach((e) => {
+    if (e.isIntersecting) {
+      imgs.style.animationPlayState = "running";
+    } else {
+      imgs.style.animationPlayState = "paused";
+    }
+  });
+});
+imgObs.observe(imgContainer);
