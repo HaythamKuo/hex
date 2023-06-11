@@ -244,13 +244,10 @@ const imgContainer = document.querySelector(".header__imgs");
 const imgs = document.querySelector(".header__imgs--img");
 
 const imgObs = new IntersectionObserver((entries) => {
-  entries.forEach((e) => {
-    if (e.isIntersecting) {
-      imgs.style.animationPlayState = "running";
-    } else {
-      imgs.style.animationPlayState = "paused";
-      console.log("停止運轉");
-    }
-  });
+  entries.forEach((e) =>
+    e.isIntersecting
+      ? (imgs.style.animationPlayState = "running")
+      : (imgs.style.animationPlayState = "paused")
+  );
 });
 imgObs.observe(imgContainer);

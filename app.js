@@ -174,12 +174,10 @@ const imgContainer = document.querySelector(".header__images");
 const imgs = document.querySelector(".header__images--img");
 
 const imgObs = new IntersectionObserver((entries) => {
-  entries.forEach((e) => {
-    if (e.isIntersecting) {
-      imgs.style.animationPlayState = "running";
-    } else {
-      imgs.style.animationPlayState = "paused";
-    }
-  });
+  entries.forEach((e) =>
+    e.isIntersecting
+      ? (imgs.style.animationPlayState = "running")
+      : (imgs.style.animationPlayState = "paused")
+  );
 });
 imgObs.observe(imgContainer);

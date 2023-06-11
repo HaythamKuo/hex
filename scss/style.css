@@ -10720,13 +10720,15 @@ body {
   flex: 2 0 0;
 }
 .question-type {
-  border: 1px red solid;
   display: flex;
   align-items: center;
   border: 1px solid #525252;
   border-radius: 16px;
   padding: 1rem 1rem 0.5rem 1rem;
   cursor: pointer;
+}
+.question-type:hover {
+  border: 1px solid whitesmoke;
 }
 .question-type:not(:last-child) {
   margin-bottom: 1rem;
