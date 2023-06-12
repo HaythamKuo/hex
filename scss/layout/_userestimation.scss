@@ -18,7 +18,11 @@
     }
   }
   @media screen and (max-width: $break-point--min) {
+    position: relative;
     margin-top: 5rem;
+    justify-content: unset;
+    max-width: 100%;
+    overflow: hidden;
   }
 }
 .esitmation-users__block {
@@ -29,5 +33,38 @@
   padding: 2rem;
   flex: 1 0 0;
   @media screen and (max-width: $break-point--min) {
+    position: absolute;
+
+    max-width: 100%;
+  }
+}
+
+.dots {
+  display: none;
+  @media screen and (max-width: $break-point--min) {
+    display: flex;
+    width: auto;
+    position: relative;
+    top: 27rem;
+    left: 9rem;
+  }
+
+  &__dot {
+    display: none;
+    @media screen and (max-width: $break-point--min) {
+      display: flex;
+      position: relative;
+      border: none;
+      border-radius: 50%;
+      height: 1rem;
+      width: 1rem;
+      background-color: #b9b9b9;
+      margin-right: 1rem;
+      transition: all 0.5s;
+    }
+    &--active {
+      background-color: white;
+      opacity: 1;
+    }
   }
 }

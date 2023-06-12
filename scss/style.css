@@ -10369,7 +10369,11 @@ body {
 }
 @media screen and (max-width: 26.8em) {
   .estimation {
+    position: relative;
     margin-top: 5rem;
+    justify-content: unset;
+    max-width: 100%;
+    overflow: hidden;
   }
 }
 
@@ -10381,6 +10385,46 @@ body {
   padding: 2rem;
   flex: 1 0 0;
 }
+@media screen and (max-width: 26.8em) {
+  .esitmation-users__block {
+    position: absolute;
+    max-width: 100%;
+  }
+}
+
+.dots {
+  display: none;
+}
+@media screen and (max-width: 26.8em) {
+  .dots {
+    display: flex;
+    width: auto;
+    position: relative;
+    top: 27rem;
+    left: 9rem;
+  }
+}
+.dots__dot {
+  display: none;
+}
+@media screen and (max-width: 26.8em) {
+  .dots__dot {
+    display: flex;
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    background-color: #b9b9b9;
+    margin-right: 1rem;
+    transition: all 0.5s;
+  }
+}
+.dots__dot--active {
+  background-color: white;
+  opacity: 1;
+}
+
 .cards {
   border-radius: 160px;
   background-color: #fff;
@@ -10391,6 +10435,7 @@ body {
 @media screen and (max-width: 26.8em) {
   .cards {
     border-radius: 20px;
+    margin-top: 30rem;
   }
 }
 

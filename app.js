@@ -49,6 +49,51 @@ for (let ccc of arr) {
   estimationCards.insertAdjacentHTML("afterbegin", html);
 }
 
+//卡片滑動RWD
+
+const cardAdj = document.querySelectorAll(".esitmation-users__block");
+const dotContainer = document.querySelector(".dots");
+
+const createDots = function () {
+  cardAdj.forEach(function (_, i) {
+    dotContainer.insertAdjacentHTML(
+      "beforeend",
+      `<button class="dots__dot" data-dot="${i}"></button>`
+    );
+  });
+};
+
+const activeDots = function (para) {
+  document
+    .querySelectorAll(".dots__dot")
+    .forEach((dot) => dot.classList.remove("dots__dot--active"));
+
+  document
+    .querySelector(`.dots__dot[data-dot="${para}"]`)
+    .classList.add("dots__dot--active");
+};
+
+const changeSide = function (para) {
+  cardAdj.forEach((e, i) => {
+    e.style.transform = `translateX(${100 * (i - para)}%)`;
+  });
+};
+
+const init = function () {
+  createDots();
+  changeSide(0);
+  activeDots(0);
+};
+init();
+
+dotContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("dots__dot")) {
+    const { dot } = e.target.dataset;
+    changeSide(dot);
+    activeDots(dot);
+  }
+});
+
 //render product cards
 class ProductCards {
   constructor(title, img, desc, user, tag, num) {
