@@ -10163,9 +10163,8 @@ textarea.form-control-lg {
 body {
   box-sizing: border-box;
   background-color: #1e1e1e;
-  font-family: Noto Sans TC, sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   color: #fff;
-  max-width: 1920px;
 }
 
 .container {
@@ -10371,9 +10370,6 @@ body {
   .estimation {
     position: relative;
     margin-top: 5rem;
-    justify-content: unset;
-    max-width: 100%;
-    overflow: hidden;
   }
 }
 
@@ -10388,7 +10384,6 @@ body {
 @media screen and (max-width: 26.8em) {
   .esitmation-users__block {
     position: absolute;
-    max-width: 100%;
   }
 }
 
@@ -10526,7 +10521,6 @@ body {
 }
 .cards-lists--service-content--image:hover {
   transform: scale(1.1);
-  max-width: 90%;
 }
 
 .pageBtns {

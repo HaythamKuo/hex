@@ -74,17 +74,10 @@ const activeDots = function (para) {
 };
 
 const changeSide = function (para) {
-  cardAdj.forEach((e, i) => {
-    e.style.transform = `translateX(${100 * (i - para)}%)`;
-  });
+  cardAdj.forEach(
+    (e, i) => (e.style.transform = `translateX(${100 * (i - para)}%)`)
+  );
 };
-
-const init = function () {
-  createDots();
-  changeSide(0);
-  activeDots(0);
-};
-init();
 
 dotContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("dots__dot")) {

@@ -12,9 +12,8 @@ $break-point--min: 26.8em; //400多px
 body {
   box-sizing: border-box;
   background-color: #1e1e1e;
-  font-family: Noto Sans TC, sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   color: $white;
-  max-width: 1920px;
 }
 .container {
   margin: 0 auto;

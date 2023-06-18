@@ -20,9 +20,6 @@
   @media screen and (max-width: $break-point--min) {
     position: relative;
     margin-top: 5rem;
-    justify-content: unset;
-    max-width: 100%;
-    overflow: hidden;
   }
 }
 .esitmation-users__block {
@@ -34,8 +31,6 @@
   flex: 1 0 0;
   @media screen and (max-width: $break-point--min) {
     position: absolute;
-
-    max-width: 100%;
   }
 }
 
